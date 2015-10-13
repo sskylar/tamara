@@ -1,0 +1,16 @@
+---
+---
+
+@import 'toolbox';
+
+* {
+  @include box-sizing(border-box)
+}
+
+body{
+  background: #000;
+  color: #fff;
+  font-family: "brandon-grotesque", sans-serif;
+  font-size: 18px;
+  text-align: center;
+}

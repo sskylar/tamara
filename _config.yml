@@ -1,0 +1,14 @@
+---
+title: Tamara Lindsay
+url: http://www.tamaralindsay.com
+timezone: UTC
+collections:
+  uploads:
+    title: Uploads
+    output: true
+defaults:
+- scope:
+    path: ''
+    type: posts
+  values:
+    permalink: "/posts/:title/"
