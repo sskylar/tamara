@@ -1,5 +1,8 @@
 ---
 title: Modern Matrix
+tags:
+- Jewelry design
+- CAD Development
 position: 0
 images:
 - "/uploads/modern-matrix.jpg"
@@ -7,8 +10,5 @@ images:
 colors:
 - "#000000"
 - "#DAC26F"
-tags:
-- Jewelry design
-- CAD Development
 ---
 
