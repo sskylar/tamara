@@ -74,6 +74,8 @@ h1, h2, h3, h4, strong {
 
 .site__nav__link {
   color: $color--light-gray;
+  display: block;
+  margin-bottom: 5px;
 
   &:hover {
     color: $color--black;
