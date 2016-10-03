@@ -1,15 +1,16 @@
 ---
 title: Tamara Lindsay
-description: Fashion and jewelry designer
-url: http://www.tamaralindsay.com
 timezone: America/New_York
 collections:
-  uploads:
-    title: Uploads
-    output: true
   portfolio:
     title: Portfolio
     output: false
+  posts:
+    title: Posts
+    output: true
+  uploads:
+    title: Uploads
+    output: true
 defaults:
 - scope:
     path: ''
@@ -20,6 +21,8 @@ defaults:
     colors:
     - ''
     - ''
+description: Fashion and jewelry designer
+url: http://www.tamaralindsay.com
 permalink: pretty
 exclude:
 - Gruntfile.js
