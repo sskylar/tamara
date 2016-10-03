@@ -1,5 +1,6 @@
 ---
 title: Flowers
+position: 1
 images:
 - /uploads/flowers.jpg
 colors:

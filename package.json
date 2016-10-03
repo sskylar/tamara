@@ -40,6 +40,9 @@
     "unmockedModulePathPatterns": []
   },
   "dependencies": {
+    "flickity": "^2.0.4",
+    "flickity-imagesloaded": "^2.0.0",
+    "imagesloaded": "^4.1.1",
     "jquery": "^3.1.1"
   }
 }

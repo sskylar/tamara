@@ -1,5 +1,3 @@
-@import 'zoom';
-
 $gutter--color: 40px;
 
 .slider {
@@ -27,17 +25,17 @@ $gutter--color: 40px;
 }
 
 .slider__items {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-.slider__item {
-  margin: 0;
-  padding: 0;
+  box-shadow: 0 0 2px rgba(#000, 0.3);
 }
 
 .slider__image {
-  box-shadow: 0 1px 1px rgba(#000, 0.3);
   vertical-align: bottom;
+}
+
+.flickity-prev-next-button.next {
+  right: ($gutter--color * -1) - 44px;
+}
+
+.flickity-prev-next-button.previous {
+  left: ($gutter--color * -1) - 44px;
 }
