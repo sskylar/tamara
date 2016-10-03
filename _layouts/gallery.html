@@ -22,9 +22,9 @@ layout: default
       <div class="item__content">
         <h1 class="item__title">{{ item.title }}</h1>
 
-        {% if item.tags %}
+        {% if item.roles %}
           <div class="item__tags">
-            {% for tag in item.tags %}
+            {% for tag in item.roles %}
               {{ tag }}{% unless forloop.last %},{% endunless %}
             {% endfor %}
           </div>

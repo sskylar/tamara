@@ -6,8 +6,8 @@ images:
 colors:
 - "#ED5D89"
 - "#CBE9E6"
-tags:
-- Jewelry Design
+roles:
+- Jewelry design
 - CAD Development
 ---
 
