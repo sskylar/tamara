@@ -1,16 +1,41 @@
 ---
 title: Tamara Lindsay
-timezone: UTC
+description: Fashion and jewelry designer
+url: http://www.tamaralindsay.com
+timezone: America/New_York
 collections:
-  posts:
-    title: Posts
-    output: true
   uploads:
     title: Uploads
     output: true
+  portfolio:
+    title: Portfolio
+    output: false
 defaults:
 - scope:
     path: ''
-    type: posts
+    type: portfolio
   values:
-    permalink: "/posts/:title/"
+    images:
+    - ''
+    colors:
+    - ''
+    - ''
+permalink: pretty
+exclude:
+- Gruntfile.js
+- webpack.config.js
+- Gemfile.lock
+- package.json
+- README*
+- node_modules
+- ".gitignore"
+- assets/scripts/src
+gems:
+- jekyll-seo-tag
+- jekyll-sitemap
+sass:
+  sass_dir: assets/styles/
+  style: compressed
+menu:
+- url: https://www.linkedin.com/in/tamaralindsay
+  title: LinkedIn
