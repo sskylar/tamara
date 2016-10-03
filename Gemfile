@@ -1,7 +1,8 @@
 source 'https://rubygems.org'
-gem 'jekyll'
-gem 'jekyll-seo-tag'
-gem 'jekyll-sitemap'
+gem 'github-pages', group: :jekyll_plugins
+# gem 'jekyll'
+# gem 'jekyll-seo-tag'
+# gem 'jekyll-sitemap'
 
 group :development do
   gem 'scss_lint'
