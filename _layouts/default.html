@@ -1,20 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <meta content="width=device-width, initial-scale=1" name="viewport">
-  <meta name="generator" content="Siteleaf, http://siteleaf.com" />
-  <title>{{site.title}}</title>
-  <link rel="canonical" href="{{permalink}}" />
-  <link rel="alternate" type="application/rss+xml" href="{{site.feed_url}}" />
-  <link rel="stylesheet" type="text/css" href="/assets/styles/global.css" />
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    {% seo %}
 
-  <script src="https://use.typekit.net/ftj8cdt.js"></script>
-  <script>try{Typekit.load({ async: true });}catch(e){}</script>
-</head>
-<body>
-  <h1>{{ page.title }}</h1>
-  {{ content }}
-  {{ footer_scripts }}
-</body>
+    <link rel="stylesheet" href="/assets/styles/app.css" />
+    <link rel="stylesheet" href="/assets/styles/layouts/{{ page.layout }}.css" />
+
+    <script src="https://use.typekit.net/ftj8cdt.js"></script>
+    <script>try{Typekit.load({ async: true });}catch(e){}</script>
+  </head>
+
+  <body>
+    {% if site.google_analytics %}
+      <script type="text/javascript">
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+        ga('create', '{{ site.google_analytics }}', 'auto');
+        ga('send', 'pageview');
+      </script>
+    {% endif %}
+
+    <div class="page">
+      <header class="site__header">
+        <div class="site__info">
+          <h1 class="site__title">
+            <a href="/" title="Home">{{ site.title }}</a>
+          </h1>
+          {% if site.description %}
+            <p class="site__description">{{ site.description }}</p>
+          {% endif %}
+        </div>
+
+        {% if site.menu %}
+          <button class="site__nav__toggle">Menu</button>
+
+          <nav class="site__nav">
+            {% for link in site.menu %}
+              <a href="{{ link.url }}" class="site__nav__link">{{ link.title }}</a>
+            {% endfor %}
+          </nav>
+        {% endif %}
+      </header>
+
+      <main>
+        {{ content }}
+      </main>
+    </div>
+
+    <script type="text/javascript" src="/assets/scripts/dist/app.js"></script>
+
+    {% if page.layout == 'gallery' %}
+      <script type="text/javascript" src="/assets/scripts/dist/gallery.js"></script>
+    {% endif %}
+  </body>
 </html>

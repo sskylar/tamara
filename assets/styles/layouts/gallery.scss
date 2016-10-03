@@ -1,0 +1,19 @@
+---
+---
+
+@import 'utils/variables';
+@import 'utils/functions';
+@import 'components/slider';
+
+.item {
+  margin-bottom: $gutter--large * 2;
+}
+
+.item__title {
+  font-size: em($font-size--body);
+  margin: ($gutter--small * 2) 0 5px;
+}
+
+.item__tags {
+  color: $color--light-gray;
+}

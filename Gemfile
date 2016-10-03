@@ -1,3 +1,9 @@
 source 'https://rubygems.org'
-gem 'siteleaf'
-gem 'jekyll', '3.0.0.pre.beta9'
+gem 'jekyll'
+gem 'jekyll-seo-tag'
+gem 'jekyll-sitemap'
+
+group :development do
+  gem 'scss_lint'
+  gem 'rainbow'
+end

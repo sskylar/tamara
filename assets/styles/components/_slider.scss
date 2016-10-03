@@ -1,0 +1,43 @@
+@import 'zoom';
+
+$gutter--color: 40px;
+
+.slider {
+  margin: $gutter--color;
+  position: relative;
+}
+
+.slider__color {
+  position: absolute;
+  z-index: -1;
+
+  &:nth-of-type(1) {
+    top: $gutter--color * -1;
+    right: $gutter--color * -1;
+    bottom: $gutter--color * 2;
+    left: $gutter--color * 2;
+  }
+
+  &:nth-of-type(2) {
+    top: $gutter--color * 2;
+    right: $gutter--color * 2;
+    bottom: $gutter--color * -1;
+    left: $gutter--color * -1;
+  }
+}
+
+.slider__items {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.slider__item {
+  margin: 0;
+  padding: 0;
+}
+
+.slider__image {
+  box-shadow: 0 1px 1px rgba(#000, 0.3);
+  vertical-align: bottom;
+}
