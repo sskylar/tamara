@@ -6,7 +6,7 @@ images:
 colors:
 - "#ED5D89"
 - "#CBE9E6"
-roles:
+tags:
 - Jewelry design
 - CAD Development
 ---

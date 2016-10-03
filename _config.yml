@@ -21,7 +21,7 @@ defaults:
     colors:
     - ''
     - ''
-    roles:
+    tags:
     - ''
 description: Fashion and jewelry designer
 url: http://www.tamaralindsay.com
