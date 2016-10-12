@@ -14,6 +14,10 @@
 .item__title {
   font-size: em($font-size--body);
   margin: ($gutter--small * 2) 0 5px;
+
+  @include max-width($bp_mobile_slider) {
+    margin-top: $gutter--small;
+  }
 }
 
 .item__tags {

@@ -1,8 +1,18 @@
+@import 'utils/variables';
+@import 'utils/functions';
+@import 'utils/mixins';
+
+$bp_overlaying_arrows: 1200px;
 $gutter--color: 40px;
+$gutter--color-downsized: 10px;
 
 .slider {
   margin: $gutter--color;
   position: relative;
+
+  @include max-width($bp_mobile_slider) {
+    margin: $gutter--color-downsized;
+  }
 }
 
 .slider__color {
@@ -14,6 +24,13 @@ $gutter--color: 40px;
     right: $gutter--color * -1;
     bottom: $gutter--color * 2;
     left: $gutter--color * 2;
+
+    @include max-width($bp_mobile_slider) {
+      top: $gutter--color-downsized * -1;
+      right: $gutter--color-downsized * -1;
+      bottom: $gutter--color-downsized * 2;
+      left: $gutter--color-downsized * 2;
+    }
   }
 
   &:nth-of-type(2) {
@@ -21,6 +38,13 @@ $gutter--color: 40px;
     right: $gutter--color * 2;
     bottom: $gutter--color * -1;
     left: $gutter--color * -1;
+
+    @include max-width($bp_mobile_slider) {
+      top: $gutter--color-downsized * 2;
+      right: $gutter--color-downsized * 2;
+      bottom: $gutter--color-downsized * -1;
+      left: $gutter--color-downsized * -1;
+    }
   }
 }
 
@@ -40,8 +64,20 @@ $gutter--color: 40px;
 
 .flickity-prev-next-button.next {
   right: ($gutter--color * -1) - 44px;
+
+  @include max-width($bp_overlaying_arrows) {
+    right: 0;
+  }
 }
 
 .flickity-prev-next-button.previous {
   left: ($gutter--color * -1) - 44px;
+
+  @include max-width($bp_overlaying_arrows) {
+    left: 0;
+  }
+}
+
+#close-button g {
+  stroke: #fff;
 }

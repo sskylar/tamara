@@ -2,8 +2,9 @@ import imagesLoaded from 'imagesLoaded';
 import Flickity from 'flickity';
 import baguetteBox from 'baguetteBox.js';
 
-
+let isMobileStyling = (window.innerWidth <= 600); // this should stay in sync with the CSS variable
 let sliders = document.querySelectorAll('.slider__items.has-flickity');
+
 baguetteBox.run('.slider__items');
 
 if (sliders.length) {
@@ -15,7 +16,7 @@ if (sliders.length) {
       new Flickity(slider, {
         adaptiveHeight: true,
         cellAlign: 'left',
-        draggable: false, // otherwise the lightbox interferes
+        draggable: isMobileStyling, // otherwise the lightbox interferes
         pageDots: false,
         wrapAround: true
       });
