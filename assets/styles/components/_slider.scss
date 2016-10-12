@@ -28,6 +28,12 @@ $gutter--color: 40px;
   box-shadow: 0 0 2px rgba(#000, 0.3);
 }
 
+.slider__image-link {
+  display: block;
+  width: 100%;
+  cursor: zoom-in;
+}
+
 .slider__image {
   vertical-align: bottom;
 }
