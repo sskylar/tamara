@@ -3,7 +3,7 @@ title: Flowers
 tags:
 - Jewelry design
 - CAD Development
-position: 1
+position: 7
 images:
 - "/uploads/flowers.jpg"
 colors:
