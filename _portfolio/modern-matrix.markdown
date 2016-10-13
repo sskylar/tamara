@@ -3,7 +3,7 @@ title: Modern Matrix
 tags:
 - Jewelry design
 - CAD Development
-position: 6
+position: 0
 images:
 - "/uploads/modern-matrix.jpg"
 - "/uploads/modern-matrix-2.jpg"
