@@ -1,7 +1,7 @@
 ---
 title: Foral Items
 date: 2016-10-12 23:36:00 -04:00
-position: 3
+position: 2
 images:
 - "/uploads/Artboard%202.jpg"
 colors:
