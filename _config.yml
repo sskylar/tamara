@@ -40,8 +40,8 @@ gems:
 responsive_image:
   template: _includes/slider-image.html
   sizes:
-    - width: 800
-      quality: 60
+  - width: 800
+    quality: 60
 sass:
   sass_dir: assets/styles/
   style: compressed
