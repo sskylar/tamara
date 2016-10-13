@@ -5,6 +5,6 @@ images:
 - "/uploads/Artboard%202.jpg"
 colors:
 - "#E22673"
-- "#D69DB7"
+- "#d9b6c6"
 ---
 
