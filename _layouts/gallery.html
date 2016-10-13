@@ -13,9 +13,13 @@ layout: default
 
         {% assign images_length = item.images | size %}
         <div class="slider__items{% if images_length > 1 %} has-flickity{% endif %}">
-          {% for image in item.images %}
-            <a href="{{ image }}" class="slider__image-link">
-              <img src="{{ image }}" alt="{{ item.title }}" class="slider__image" />
+          {% for src in item.images %}
+            <a href="{{ src }}" class="slider__image-link">
+              {% assign resizable_src = src | replace: '/uploads/', '_uploads/' %}
+              {% responsive_image_block %}
+                path: {{ resizable_src }}
+                alt: {{ item.title }}
+              {% endresponsive_image_block %}
             </a>
           {% endfor %}
         </div>
