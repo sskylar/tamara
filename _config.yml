@@ -1,0 +1,52 @@
+---
+title: Tamara Lindsay
+timezone: America/New_York
+collections:
+  portfolio:
+    title: Portfolio
+    output: false
+  posts:
+    title: Posts
+    output: true
+  uploads:
+    title: Uploads
+    output: true
+defaults:
+- scope:
+    path: ''
+    type: portfolio
+  values:
+    images:
+    - ''
+    colors:
+    - ''
+    - ''
+description: Fashion and jewelry designer
+url: http://www.tamaralindsay.com
+permalink: pretty
+exclude:
+- Gruntfile.js
+- webpack.config.js
+- Gemfile.lock
+- package.json
+- README*
+- node_modules
+- ".gitignore"
+- assets/scripts/src
+gems:
+- jekyll/responsive_image
+- jekyll-seo-tag
+- jekyll-sitemap
+responsive_image:
+  template: _includes/slider-image.html
+  sizes:
+  - width: 720
+    quality: 100
+sass:
+  sass_dir: assets/styles/
+  style: compressed
+menu:
+- url: https://www.linkedin.com/in/tamaralindsay
+  title: LinkedIn
+- url: mailto:tamaralindsay29@gmail.com
+  title: Email
