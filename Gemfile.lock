@@ -16,7 +16,7 @@ GEM
       pathutil (~> 0.9)
       rouge (~> 1.7)
       safe_yaml (~> 1.0)
-    jekyll-responsive_image (1.0.0.pre4)
+    jekyll-responsive_image (1.0.1)
       jekyll (>= 2.0, < 4.0)
       rmagick (>= 2.0, < 3.0)
     jekyll-sass-converter (1.4.0)
@@ -52,7 +52,7 @@ PLATFORMS
 
 DEPENDENCIES
   jekyll
-  jekyll-responsive_image (= 1.0.0.pre4)
+  jekyll-responsive_image
   jekyll-seo-tag
   jekyll-sitemap
   rainbow
