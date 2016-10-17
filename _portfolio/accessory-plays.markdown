@@ -6,9 +6,9 @@ images:
 - "/uploads/Artboard%208.jpg"
 - "/uploads/Artboard%209.jpg"
 colors:
-- "#173E34"
+- "#c7cece"
 - "#c7cece"
 - "#A41F34"
-- "#c7cece"
+- "#173e34"
 ---
 
