@@ -17,7 +17,7 @@ layout: default
             <a href="{{ src }}" class="slider__image-link">
               {% assign resizable_src = src | replace: '/uploads/', '_uploads/' %}
               {% responsive_image_block %}
-                path: {{ resizable_src }}
+                path: {{ resizable_src | replace: '%20', ' ' }}
                 alt: {{ item.title }}
               {% endresponsive_image_block %}
             </a>
