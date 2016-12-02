@@ -1,5 +1,6 @@
 source 'https://rubygems.org'
 gem 'jekyll'
+gem 'nokogiri', '1.6.7.1'
 
 group :jekyll_plugins do
   gem 'jekyll-responsive_image'
